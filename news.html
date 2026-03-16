@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News & Insights — TUNAKOREA</title>
+  <meta name="description" content="Latest news, industry insights, and updates from TUNAKOREA — your trusted premium seafood export partner." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar navbar-inner" id="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">
+        <span class="logo-tuna">TUNA</span><span class="logo-korea">KOREA</span>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/" class="nav-link">HOME</a></li>
+        <li><a href="/#about" class="nav-link">ABOUT</a></li>
+        <li><a href="/#capabilities" class="nav-link">CAPABILITIES</a></li>
+        <li><a href="/#products" class="nav-link">PRODUCTS</a></li>
+        <li><a href="/#gallery" class="nav-link">GALLERY</a></li>
+        <li><a href="/news.html" class="nav-link active">NEWS</a></li>
+        <li><a href="/#certifications" class="nav-link">CERTIFICATIONS</a></li>
+        <li><a href="/#contact" class="nav-link nav-cta">CONTACT US</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <section class="page-header">
+    <div class="container">
+      <span class="section-tag">SEAFOOD NEWS & INSIGHTS</span>
+      <h1 class="page-title">Latest from TUNAKOREA</h1>
+      <p class="page-subtitle">Industry insights, company updates, and expert perspectives on the global seafood trade.</p>
+    </div>
+  </section>
+
+  <!-- ===== NEWS LIST ===== -->
+  <section class="news-list-section">
+    <div class="container">
+      <div class="news-list" id="newsList">
+        <!-- Articles will be injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-tuna">TUNA</span><span class="logo-korea">KOREA</span>
+          </div>
+          <p>Specializing in processing, freezing, and exporting premium tuna and seafood. Trusted worldwide through international quality standards.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/#about">About Us</a></li>
+            <li><a href="/#products">Products</a></li>
+            <li><a href="/news.html">News</a></li>
+            <li><a href="/#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="/#products">Premium Tuna</a></li>
+            <li><a href="/#products">Sardines</a></li>
+            <li><a href="/#products">Mackerel</a></li>
+            <li><a href="/#products">Herring</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+821071129631">+82 10 7112 9631</a></li>
+            <li><a href="mailto:hy3d@hy3d.kr">hy3d@hy3d.kr</a></li>
+            <li><a href="https://wa.me/821071129631">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 HY3D Co., Ltd. All Rights Reserved. | <a href="https://www.hanyang3d.kr/" target="_blank">hanyang3d.kr</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module">
+    import { articles } from '/news-data.js';
+
+    const listEl = document.getElementById('newsList');
+
+    articles.forEach(article => {
+      const card = document.createElement('div');
+      card.className = 'news-list-card';
+      card.innerHTML = `
+        <a href="/article.html?id=${article.id}" class="news-list-link">
+          <div class="news-list-image">
+            <img src="${article.image}" alt="${article.title}" loading="lazy" />
+            <div class="news-date">${article.date}</div>
+          </div>
+          <div class="news-list-body">
+            <div class="news-tags">
+              ${article.tags.map(t => `<span class="news-tag">${t}</span>`).join('')}
+            </div>
+            <h2>${article.title}</h2>
+            <p>${article.excerpt}</p>
+            <span class="news-read-more">Read Article →</span>
+          </div>
+        </a>
+      `;
+      listEl.appendChild(card);
+    });
+
+    // Nav toggle
+    document.getElementById('navToggle')?.addEventListener('click', () => {
+      document.getElementById('navMenu')?.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

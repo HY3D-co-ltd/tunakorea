@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <!-- HACCP Shield -->
+  <path d="M60 8L16 28v36c0 28 18.7 44 44 50 25.3-6 44-22 44-50V28L60 8z" fill="#005BAC"/>
+  <path d="M60 14L22 32v30c0 24.5 16.2 38.5 38 44 21.8-5.5 38-19.5 38-44V32L60 14z" fill="#fff"/>
+  <path d="M60 20L28 36v26c0 21 13.8 33 32 38 18.2-5 32-17 32-38V36L60 20z" fill="#005BAC"/>
+  <text x="60" y="58" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="13" font-weight="700">HACCP</text>
+  <text x="60" y="74" text-anchor="middle" fill="#90CAF9" font-family="Arial,sans-serif" font-size="8" font-weight="600">CERTIFIED</text>
+  <!-- Check mark -->
+  <circle cx="60" cy="92" r="8" fill="#4CAF50"/>
+  <path d="M55 92l3.5 3.5L63 89" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
