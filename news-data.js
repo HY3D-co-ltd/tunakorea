@@ -74,5 +74,59 @@ export const articles = [
       <h2>Global Reach with Local Precision</h2>
       <p>Whether delivering to Southeast Asian fish markets, European restaurant distributors, or African fishery cooperatives, TUNAKOREA's logistics team optimizes routing and container selection to maintain the cold chain from Korean ports to final destination. With 85+ supplied sites worldwide, the system has been proven across diverse climates and geographies.</p>
     `
+  },
+  {
+    id: 4,
+    title: "Korean Herring: Why Global Buyers Are Choosing Korea's Premium Frozen Herring",
+    date: "Mar 17, 2026",
+    tags: ["Herring", "Korean Seafood", "Export"],
+    image: "/images/herring-clean.png",
+    excerpt: "Discover why Korean-origin frozen herring is rapidly gaining traction among global buyers — from superior cold-water quality to HACCP-certified processing and competitive FTA advantages.",
+    content: `
+      <p>As global demand for high-quality frozen herring continues to rise, buyers worldwide are increasingly turning to <strong>Korean-origin herring</strong> as their preferred sourcing option. TUNAKOREA is proud to offer premium Korean herring that meets the highest international standards — and here's why it matters for your business.</p>
+
+      <h2>Why Korean Herring Stands Out</h2>
+
+      <h3>1. Cold-Water Origin = Superior Quality</h3>
+      <p>Korean herring is harvested from the <strong>cold, nutrient-rich waters</strong> of the East Sea (Sea of Japan) and the South Sea of Korea. These pristine, low-temperature waters produce herring with naturally higher fat content, firmer texture, and richer flavor compared to warm-water alternatives. The result is a product that consistently meets the expectations of discerning buyers in Europe, Asia, and beyond.</p>
+
+      <h3>2. Rich in Omega-3 & High Nutritional Value</h3>
+      <p>Korean herring is exceptionally rich in <strong>Omega-3 fatty acids (EPA & DHA)</strong>, high-quality protein, and essential vitamins including Vitamin D and B12. This nutritional profile makes it ideal for both human consumption and premium-grade feed applications — a key consideration for buyers serving health-conscious markets.</p>
+
+      <img src="/images/herring-clean.png" alt="Premium Korean frozen herring — cleaned, graded, and export-ready" style="width:100%; border-radius:12px; margin:32px 0;" />
+
+      <h2>Processing & Quality Assurance</h2>
+
+      <h3>3. Rapid Freezing at −40°C</h3>
+      <p>All herring is <strong>flash-frozen within hours of catch</strong> at −40°C, locking in peak freshness at the cellular level. This rapid freezing process prevents ice crystal formation, preserving the natural texture, color, and nutritional integrity that buyers expect from a premium product.</p>
+
+      <h3>4. HACCP-Certified Processing</h3>
+      <p>Every batch is processed under <strong>HACCP-certified guidelines</strong> with full traceability from ocean to delivery. Our quality control team inspects each shipment for size uniformity, freshness indicators, and packaging integrity before export — giving you confidence in every order.</p>
+
+      <h3>5. Flexible Packaging Options</h3>
+      <p>We offer customizable packaging to meet your market requirements:</p>
+      <ul>
+        <li><strong>Bulk cartons</strong> (10kg / 20kg) for wholesale and industrial use</li>
+        <li><strong>Retail-ready packs</strong> for direct consumer distribution</li>
+        <li><strong>Custom labeling</strong> with your brand identity for private-label partnerships</li>
+      </ul>
+
+      <img src="/images/herring-korea.jpg" alt="Korean herring bulk packaging — 20kg export cartons ready for shipment" style="width:100%; border-radius:12px; margin:32px 0;" />
+
+      <h2>Competitive Advantages for Buyers</h2>
+
+      <h3>6. FTA Tariff Benefits</h3>
+      <p>As a <strong>Korea-EU FTA Certificated Exporter</strong>, TUNAKOREA enables European buyers to benefit from preferential tariff rates. This means significant cost savings compared to sourcing from non-FTA countries — a direct advantage to your bottom line.</p>
+
+      <h3>7. Reliable Year-Round Supply</h3>
+      <p>With <strong>10,000-ton cold storage capacity</strong> and strategic inventory management, TUNAKOREA guarantees consistent supply regardless of seasonal fishing variations. No more supply chain disruptions — we deliver when you need it.</p>
+
+      <h3>8. End-to-End Cold Chain</h3>
+      <p>From our processing facility to your dock, every shipment travels in a <strong>monitored cold chain at −20°C</strong> with real-time temperature tracking. We provide complete temperature logs with every delivery, ensuring full transparency and product integrity.</p>
+
+      <h2>Ready to Source Premium Korean Herring?</h2>
+      <p>Whether you need bulk frozen herring for processing, retail-ready packs for distribution, or custom specifications for your market, TUNAKOREA is your trusted partner.</p>
+      <p><strong>Contact us today</strong> for product specifications, pricing, and sample arrangements. Let us show you why Korean herring is the smart choice for quality-driven buyers worldwide.</p>
+    `
   }
 ];
